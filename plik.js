@@ -11,7 +11,6 @@ class Slider {
 
         this.generateSlider();
         this.changeSlide(this.currentSlide);
-
     }
 
     generateSlider() {
@@ -34,7 +33,6 @@ class Slider {
 
         this.createPrevNext();
         this.createPagination();
-
     }
 
     createPrevNext() {
@@ -58,7 +56,6 @@ class Slider {
         nav.appendChild(this.next);
 
         this.slider.appendChild(nav);
-
     }
 
     createPagination() {
@@ -85,7 +82,6 @@ class Slider {
         }
 
         this.slider.appendChild(ulDots);
-
     }
 
     changeSlide(index) {
@@ -107,7 +103,6 @@ class Slider {
 
         clearInterval(this.time);
         this.time = setTimeout(() => this.slideNext() , 6000); 
-
     }
 
     slidePrev() {
